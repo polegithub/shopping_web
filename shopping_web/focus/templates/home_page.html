@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- Template by Quackit.com -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>PYTHON WORLD</title>
+  {% load staticfiles %}
+  <script src="{% static "csrf.js" %}"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="{% static "css/custom.css" %}" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-globe"></span> Logo</a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">公司介绍</a>
+                    </li>
+                    <li>
+                        <a href="#">新闻资讯</a>
+                    </li>
+                    <li>
+                        <a href="focus/product_index/">产品介绍</a>
+                    </li>
+                    <li>
+                        <a href="#">联系我们</a>
+                    </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="about-us">
+              <li><a href="#">更多1</a></li>
+              <li><a href="#">更多2</a></li>
+              <li><a href="#">更多3</a></li>
+            </ul>
+          </li>    
+                </ul>
+
+        <!-- Search -->
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> 搜索</button>
+        </form>
+
+        </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <div class = "nav-background-image">
+          <img src="http://img06.tooopen.com/images/20160909/tooopen_sy_178458175763.jpg" style="top:-44px;width:100%;height:480px" alt="background-image" />
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<div class="container-fluid">
+    <!-- Left Column -->
+    <div class="col-sm-3">
+
+      <!-- List-Group Panel -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h1 class="panel-title"><span class="glyphicon glyphicon-fire"></span> 商品分类 </h1>
+        </div>
+        <div class="list-group">
+          <a href="#" class="list-group-item">辣椒酱的调味精品 </a>
+          <a href="#" class="list-group-item">中秋节假，月饼送到</a>
+          <a href="#" class="list-group-item">秘制酱料，步骤如此简单</a>
+          <a href="#" class="list-group-item">精致蒜泥，火锅底料调味</a>
+          <a href="#" class="list-group-item">食品、酒类、生鲜</a>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h1 class="panel-title"><span class="glyphicon glyphicon-pencil"></span> 精品推荐</h1>
+        </div>
+
+        <div class="panel-body">
+          <p>食品的调节功能：表示食品可对人体产生良好的调节作用，如调节人体生理节律，提高机体的免疫力，降血压、降血脂、降血糖等功效。如芹菜的降血压、海带的降血目压和降胆固醇、核桃的健脑、绿豆的清热解毒作用等。因此，凡是具调节功能的食品称为功能性食品或保健食品</p>
+          <p><button class="btn btn-default">购买</button></p>
+        </div>
+      </div>
+
+</div>
+  
+
+<div class="container-fluid">
+    <!-- Left Column -->
+    <div class="col-sm-3">
+
+      <!-- List-Group Panel -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h1 class="panel-title"><span class="glyphicon glyphicon-fire"></span> 商品分类 </h1>
+        </div>
+        <div class="list-group">
+          <a href="#" class="list-group-item">辣椒酱的调味精品 </a>
+          <a href="#" class="list-group-item">中秋节假，月饼送到</a>
+          <a href="#" class="list-group-item">秘制酱料，步骤如此简单</a>
+          <a href="#" class="list-group-item">精致蒜泥，火锅底料调味</a>
+          <a href="#" class="list-group-item">食品、酒类、生鲜</a>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h1 class="panel-title"><span class="glyphicon glyphicon-pencil"></span> 精品推荐</h1>
+        </div>
+
+        <div class="panel-body">
+          <p>食品的调节功能：表示食品可对人体产生良好的调节作用，如调节人体生理节律，提高机体的免疫力，降血压、降血脂、降血糖等功效。如芹菜的降血压、海带的降血目压和降胆固醇、核桃的健脑、绿豆的清热解毒作用等。因此，凡是具调节功能的食品称为功能性食品或保健食品</p>
+          <p><button class="btn btn-default">购买</button></p>
+        </div>
+      </div>
+
+</div>
+
+<!-- Right Column -->
+<div class="col-sm-3">
+      {% if request.user.is_authenticated %}
+      <!-- Form --> 
+      <div class="panel panel-default">       
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <span class="glyphicon glyphicon-user"></span> 
+            登录
+          </h3>
+        </div>
+        <div class="panel-body">          
+          <div class="form-group">hi:{{ user }} <a href="/focus/logout/"><input class="btn btn-default" type="submit" value="Logout" /></a></div>
+        </div>
+      </div>
+      {% else %}
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <span class="glyphicon glyphicon-log-in"></span> 
+            登录
+          </h3>
+        </div>
+        <div class="panel-body">  
+          <form action="/focus/login/" method="post">
+            {% csrf_token %}
+            {{ loginform.non_field_errors }}
+            <div class="form-group">
+              {{ loginform.uid }}
+            <!--  <input type="text" class="form-control" id="uid" name="uid" placeholder="Username">  -->
+            </div>
+            <div class="form-group">
+              {{ loginform.pwd }}
+            <!--  <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password">  -->
+            </div>
+            <button type="submit" class="btn btn-default">登录</button>
+          </form>       
+        </div>
+      </div>
+      {% endif %}
+      </div>
+</div><!--/Right Column -->
+
+<!-- Progress Bars -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+      <span class="glyphicon glyphicon-tasks"></span> 
+      销量排行榜
+    </h3>
+  </div>
+  <div class="panel-body">
+    <div class="progress">
+      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100"
+      aria-valuemin="0" aria-valuemax="100" style="width:100%">
+        100% 海底捞火锅
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80"
+      aria-valuemin="0" aria-valuemax="100" style="width:80%">
+        80% 重庆九宫格
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="45"
+      aria-valuemin="0" aria-valuemax="100" style="width:45%">
+        45% 小肥羊
+      </div>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="35"
+      aria-valuemin="0" aria-valuemax="100" style="width:35%">
+        35% 串串香
+      </div>
+    </div>
+</div>
+
+<!-- Center Column -->
+<div class="col-sm-6">    
+      <div class="row">
+        <article class="col-xs-12">
+          <h2>壹魚壹锅</h2>
+          <p>火锅是他家主打，从锅底到调料，都由自家厨房制作。锅底是火锅的灵魂，品种也有好几样，鸡汤、牛骨、猪骨、麻辣、白汤，总有一款合适。有机时蔬草鸡汤汤底，用自家农场种植的7种时令蔬菜，配上散养5个月以上的草鸡炖煮而成。清爽甘香，鸡味浓郁而不油腻，让人忍不住在涮煮其他食材之前，就先喝上一大碗。喜欢西式口味的人也可以试一下他们家的炉烤有机番茄牛骨汤,里面一大块牛骨头还有半只大洋葱，捞起来是番茄丁，温度一高统统化开，酸溜溜的很开胃。此外，他家的海鲜拼盘也很受欢迎哦。</p>
+          <p><button class="btn btn-default">点击进入</button></p>
+          <p class="pull-right"><span class="label label-default">keyword</span> <span class="label label-default">tag</span> <span class="label label-default">post</span></p>
+          <ul class="list-inline">
+            <li><a href="#">今天</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-comment"></span> 2 评论</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-star-empty"></span> 8 收藏</a></li>
+          </ul>
+        </article>
+      </div>
+      <hr>
+</div><!--/Center Column-->
+
+</body>
+
+</html>

@@ -1,2 +1,8 @@
 # shopping_web_python
-学习前端+后端的小项目，一个小网站
+
+语言：
+Html/CSS + JavaScript + Python（基于DSjango）
+
+目的：
+学习前端+后端的小项目
+

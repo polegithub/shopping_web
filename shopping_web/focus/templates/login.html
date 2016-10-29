@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <title>登陆</title>
-<link type="text/css" rel="stylesheet" href="../style/reset.css">
-<link type="text/css" rel="stylesheet" href="../style/main.css">
+{% load staticfiles %}
+<link href="{% static "css/main.css" %}" rel="stylesheet">
+<link href="{% static "css/reset.css" %}" rel="stylesheet">
 <script language="JavaScript" src="../js/index.js">
 </script>
 <!--[if IE 6]>
@@ -17,7 +18,7 @@
   <div class="logoBar">
     <div class="comWidth">
       <div class="login-logo fl">
-        <a href="#"><img src="../images/logo.png" alt="muke网"></a>
+        <a href="#"><img src="{% static "images/logo.png" %}" alt="muke网"></a>
       </div>
       <h3 class="welcome_title">欢迎登陆</h3>
     </div>

@@ -15,12 +15,26 @@
 .topBar{
   height:31px; 
   background-color:#F7F7F7; 
-  line-height:31px;}
+  line-height:31px;
+}
 .collection{
   background:url(../images/icon/collection.jpg) left center no-repeat; 
   padding-left:19px; 
-  font-weight:bold;}
-.topBar a:hover{color:red;}
+  font-weight:bold;
+  float: right;
+}
+.topBar a:hover{
+  color:red;
+}
+.returnArea a:hover{
+ color: black;
+}
+.returnArea{
+  float: left;
+  /*position: */
+  width: 100px;
+  color: blue;
+}
 /*logo*/
 .logoBar{
   height: 85px;
@@ -308,6 +322,7 @@
 .more:hover{
   text-decoration:underline;
 }
+
 /*商品列表*/
 .shopList .leftArea{
   width:190px;
@@ -495,8 +510,6 @@
   position:relative;
 }
 
-
-
 /*登陆页面*/
 .login_logo .comWidth{
   width:460px;
@@ -548,7 +561,7 @@
   width:309px; 
   height:40px; 
   color: white;
-  background-color: orange;
+  background-color: #1D7AD9;
   border: #ccc solid 1px;
 }
 .login_partners{

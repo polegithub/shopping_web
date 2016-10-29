@@ -2,9 +2,13 @@
 <html>
 <head>
 <meta charset="utf-8">
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <title>shopping - Web</title>
-<link type="text/css" rel="stylesheet" href="../style/reset.css">
-<link type="text/css" rel="stylesheet" href="../style/main.css">
+{% load staticfiles %}
+<link href="{% static "css/main.css" %}" rel="stylesheet">
+<link href="{% static "css/reset.css" %}" rel="stylesheet">
+
 <script language="JavaScript" src="../js/index.js">
 </script>
 <!--[if IE 6]>
@@ -18,6 +22,9 @@
 <div class="headerBar">
 	<div class="topBar">
     <div class="comWidth">
+    	<div class="returnArea">
+        <a href="/" class="buttin">返回首页</a>
+      </div>
       <div class="leftArea">
         <a href="#" class="collection">收藏本站</a>
       </div>
@@ -31,7 +38,7 @@
 	<div class="logoBar">
 		<div class="comWidth">
 			<div class="logo fl">
-				<a href="#"><img src="../images/logo.png" alt="muke网"></a>
+				<a href="#"><img src="{% static "images/logo.png" %}" alt="muke网"></a>
 			</div>
 			<div class="search_box fl">
 				<input type="text" class="search_text fl">
@@ -46,7 +53,8 @@
 	<div class="navBox">
 		<div class="comWidth clearfix">
 			<div class="shopClass fl">
-				<h3><input type="button" class="shopClass_btn fl" value="全部商品分类" onClick="showTotalMenuAction()"><input type="image" class="shopClass_icon" src="../images/icon/down.jpg" onClick="showTotalMenuAction()"></h3>
+				<h3><input type="button" class="shopClass_btn fl" value="全部商品分类" onClick="showTotalMenuAction()"><input type="image" class="shopClass_icon" src="{% static "images/icon/down.jpg" %}" onClick="
+					showTotalMenuAction()"></h3>
 				<div class="shopClass_show hide" id="testId">
 					<dl class="shopClass_item">
 						<dt><a href="#" class="b">手机</a> <a href="#" class="b">数码</a> <a href="#" class="aLink">合约机</a></dt>
@@ -192,8 +200,8 @@
 <div class="rightArea">
 		<div class="banner_bar banner_big">
 			<ul class="imgBox">
-				<li><a href="#"><img src="../images/banner/banner_01.jpg" alt="banner"></a></li>
-				<li><a href="#"><img src="../images/banner/banner_02.jpg" alt="banner"></a></li>
+				<li><a href="#"><img src="{% static "images/banner/banner_01.jpg" %}" alt="banner"></a></li>
+				<li><a href="#"><img src="{% static "images/banner/banner_01.jpg" %}" alt="banner"></a></li>
 			</ul>
 			<div class="imgNum">
 				<a href="#" class="active"></a><a href="#"></a><a href="#"></a><a href="#"></a>
@@ -207,7 +215,7 @@
 			<div class="item">
 				<div class="item_cont">
 					<div class="img_item">
-						<a href="#"><img src="../images/shopImg.jpg" alt=""></a>
+						<a href="#"><img src="{% static "images/shopImg.jpg" %}" alt=""></a>
 					</div>
 					<p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
 					<p class="money">￥888</p>
@@ -217,7 +225,7 @@
 			<div class="item">
 				<div class="item_cont">
 					<div class="img_item">
-						<a href="#"><img src="../images/shopImg.jpg" alt=""></a>
+						<a href="#"><img src="{% static "images/shopImg.jpg" %}" alt=""></a>
 					</div>
 					<p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
 					<p class="money">￥888</p>
@@ -227,7 +235,7 @@
 			<div class="item">
 				<div class="item_cont">
 					<div class="img_item">
-						<a href="#"><img src="../images/shopImg.jpg" alt=""></a>
+						<a href="#"><img src="{% static "images/shopImg.jpg" %}" alt=""></a>
 					</div>
 					<p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
 					<p class="money">￥888</p>
@@ -237,7 +245,7 @@
 			<div class="item">
 				<div class="item_cont">
 					<div class="img_item">
-						<a href="#"><img src="../images/shopImg.jpg" alt=""></a>
+						<a href="#"><img src="{% static "images/shopImg.jpg" %}" alt=""></a>
 					</div>
 					<p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
 					<p class="money">￥888</p>
@@ -247,7 +255,7 @@
 			<div class="item">
 				<div class="item_cont">
 					<div class="img_item">
-						<a href="#"><img src="../images/shopImg.jpg" alt=""></a>
+						<a href="#"><img src="{% static "images/shopImg.jpg" %}" alt=""></a>
 					</div>
 					<p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
 					<p class="money">￥888</p>
@@ -257,7 +265,7 @@
 			<div class="item">
 				<div class="item_cont">
 					<div class="img_item">
-						<a href="#"><img src="../images/shopImg.jpg" alt=""></a>
+						<a href="#"><img src="{% static "images/shopImg.jpg" %}" alt=""></a>
 					</div>
 					<p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
 					<p class="money">￥888</p>
@@ -267,7 +275,7 @@
 			<div class="item">
 				<div class="item_cont">
 					<div class="img_item">
-						<a href="#"><img src="../images/shopImg.jpg" alt=""></a>
+						<a href="#"><img src="{% static "images/shopImg.jpg" %}" alt=""></a>
 					</div>
 					<p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
 					<p class="money">￥888</p>
@@ -277,7 +285,7 @@
 			<div class="item">
 				<div class="item_cont">
 					<div class="img_item">
-						<a href="#"><img src="../images/shopImg.jpg" alt=""></a>
+						<a href="#"><img src="{% static "images/shopImg.jpg" %}" alt=""></a>
 					</div>
 					<p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
 					<p class="money">￥888</p>
@@ -293,7 +301,7 @@
 			<div class="item">
 				<div class="item_cont">
 					<div class="img_item">
-						<a href="#"><img src="../images/shopImg.jpg" alt=""></a>
+						<a href="#"><img src="{% static "images/shopImg.jpg" %}" alt=""></a>
 					</div>
 					<p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
 					<p class="money">￥888</p>
@@ -303,7 +311,7 @@
 			<div class="item">
 				<div class="item_cont">
 					<div class="img_item">
-						<a href="#"><img src="../images/shopImg.jpg" alt=""></a>
+						<a href="#"><img src="{% static "images/shopImg.jpg" %}" alt=""></a>
 					</div>
 					<p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
 					<p class="money">￥888</p>
@@ -313,7 +321,7 @@
 			<div class="item">
 				<div class="item_cont">
 					<div class="img_item">
-						<a href="#"><img src="../images/shopImg.jpg" alt=""></a>
+						<a href="#"><img src="{% static "images/shopImg.jpg" %}" alt=""></a>
 					</div>
 					<p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
 					<p class="money">￥888</p>
@@ -323,7 +331,7 @@
 			<div class="item">
 				<div class="item_cont">
 					<div class="img_item">
-						<a href="#"><img src="../images/shopImg.jpg" alt=""></a>
+						<a href="#"><img src="{% static "images/shopImg.jpg" %}" alt=""></a>
 					</div>
 					<p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
 					<p class="money">￥888</p>
@@ -333,7 +341,7 @@
 			<div class="item">
 				<div class="item_cont">
 					<div class="img_item">
-						<a href="#"><img src="../images/shopImg.jpg" alt=""></a>
+						<a href="#"><img src="{% static "images/shopImg.jpg" %}" alt=""></a>
 					</div>
 					<p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
 					<p class="money">￥888</p>
@@ -343,7 +351,7 @@
 			<div class="item">
 				<div class="item_cont">
 					<div class="img_item">
-						<a href="#"><img src="../images/shopImg.jpg" alt=""></a>
+						<a href="#"><img src="{% static "images/shopImg.jpg" %}" alt=""></a>
 					</div>
 					<p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
 					<p class="money">￥888</p>
@@ -353,7 +361,7 @@
 			<div class="item">
 				<div class="item_cont">
 					<div class="img_item">
-						<a href="#"><img src="../images/shopImg.jpg" alt=""></a>
+						<a href="#"><img src="{% static "images/shopImg.jpg" %}" alt=""></a>
 					</div>
 					<p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
 					<p class="money">￥888</p>
@@ -363,7 +371,7 @@
 			<div class="item">
 				<div class="item_cont">
 					<div class="img_item">
-						<a href="#"><img src="images/shopImg.jpg" alt=""></a>
+						<a href="#"><img src="{% static "images/shopImg.jpg" %}" alt=""></a>
 					</div>
 					<p><a href="#">文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</a></p>
 					<p class="money">￥888</p>
